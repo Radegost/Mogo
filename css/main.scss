@@ -6,6 +6,7 @@ body{
   font-family: Tahoma, cursive;
 }
 .navbar-default {
+  -webkit-transition-duration: 1s;
   transition-duration: 1s;
   .navbar-toggle {
     background: none;
@@ -81,9 +82,6 @@ body{
 .site-header {
   //margin-top: -20px;
   background: url("../img/banner.png") center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   height: 500px;
   text-align: center;
@@ -151,6 +149,7 @@ body{
     font-weight: 700;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
+    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     padding-top: calc(30% - 25px);
     width: calc(100% - 30px);
@@ -164,8 +163,6 @@ body{
   }
   .super-team:hover {
     opacity: 1;
-    -webkit-box-shadow: 7px 7px 0px 0px rgba(153, 204, 204, 1);
-    -moz-box-shadow: 7px 7px 0px 0px rgba(153, 204, 204, 1);
     box-shadow: 7px 7px 0px 0px rgba(153, 204, 204, 1);
   }
   .content {
@@ -200,6 +197,8 @@ body{
 .amazing-services {
   margin-bottom: 50px;
   .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     .icon {
       height: 24px;
@@ -267,11 +266,15 @@ body{
       padding: 10px;
     }
     .arrow-up {
+      -webkit-transform: rotate(180deg);
       transform: rotate(180deg);
+      -webkit-transition: .3s;
       transition: .3s;
     }
     .arrow-down {
+      -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
+      -webkit-transition: .3s;
       transition: .3s;
     }
   }
@@ -311,6 +314,8 @@ body{
 .team {
   margin-bottom: 100px;
   .person {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 20px;
     .name {
@@ -329,20 +334,28 @@ body{
       width: 100%;
     }
     img:hover {
-      -webkit-box-shadow: 7px 7px 0px 0px rgba(153, 204, 204, 1);
-      -moz-box-shadow: 7px 7px 0px 0px rgba(153, 204, 204, 1);
       box-shadow: 7px 7px 0px 0px rgba(153, 204, 204, 1);
     }
   }
 }
 .our-work {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-color: #eeeeee;
   .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     .gallery-img {
       padding: 0;
@@ -358,12 +371,17 @@ body{
   margin-top: 0;
 }
 .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .blog-post {
   margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 350px;
   margin-top: 25px;
@@ -437,6 +455,8 @@ body{
     font-size: 15px;
   }
   .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .footer-small-title {
@@ -446,7 +466,11 @@ body{
   .insta-img-container {
     max-width: 300px;
     max-height: 300px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
     column-gap: 0;
     .insta-img {
       img {
@@ -521,6 +545,8 @@ body{
     }
     .message-content {
       margin: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       .message-text {
         span {
